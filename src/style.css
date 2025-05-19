@@ -1,0 +1,319 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #374151;
+    color: #cbd5e1;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* General */
+  .app {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #e0e7ff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  p {
+    max-width: 700px;
+    margin: 0.5rem auto 0 auto;
+    font-size: 1.1rem;
+    color: #94a3b8;
+  }
+  
+  /* Neumorphism Dark */
+  .neumorphic {
+    background: #2c3748;
+    border-radius: 16px;
+    box-shadow:
+      6px 6px 10px #1b2638,
+      -6px -6px 10px #404f6b;
+    transition: all 0.3s ease;
+  }
+  
+  .neumorphic:hover {
+    box-shadow:
+      inset 6px 6px 12px #1b2638,
+      inset -6px -6px 12px #404f6b;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 5rem;
+  }
+  
+  .hero-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow:
+      8px 8px 12px #1b2638,
+      -8px -8px 12px #404f6b;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .highlight {
+    color: #60a5fa;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+    color: #94a3b8;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: #2c3748;
+    color: #60a5fa;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow:
+      6px 6px 10px #1b2638,
+      -6px -6px 10px #404f6b;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #60a5fa;
+    color: #1e293b;
+    box-shadow:
+      inset 6px 6px 12px #1b2638,
+      inset -6px -6px 12px #404f6b;
+  }
+  
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  
+  .skill-item {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    user-select: none;
+    color: #a5b4fc;
+    cursor: default;
+    transition: color 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    color: #60a5fa;
+  }
+  .skills-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .skill-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: #374151;
+    box-shadow: 10px 10px 30px #2e3640, -10px -10px 30px #3e485c;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill-tag {
+    background: #2c2f36;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    box-shadow: inset 2px 2px 4px #2a2d33, inset -2px -2px 4px #3e485c;
+    transition: background 0.3s ease;
+  }
+  
+  .skill-tag:hover {
+    background: #414a5e;
+  }
+  
+  /* Services */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    padding: 2rem 1.5rem;
+    max-width: 280px;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    color: #a5b4fc;
+    transition: transform 0.4s ease, color 0.3s ease;
+  }
+  
+  .card:hover {
+    color: #60a5fa;
+    transform: translateY(-10px) scale(1.03);
+  }
+  .icon {
+    margin-bottom: 1rem;
+    color: #60a5fa;
+    transition: color 0.3s ease;
+    }
+    
+    /* Projects */
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    }
+    
+    .project-card {
+    padding: 1rem;
+    cursor: default;
+    user-select: none;
+    transition: box-shadow 0.3s ease;
+    }
+    
+    .project-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 0.7rem;
+    box-shadow:
+    4px 4px 10px #1b2638,
+    -4px -4px 10px #404f6b;
+    }
+    
+    .project-card:hover {
+    box-shadow:
+    inset 4px 4px 10px #1b2638,
+    inset -4px -4px 10px #404f6b;
+    }
+    
+    .project-link {
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+    }
+    
+    .project-link:hover {
+    color: #a5b4fc;
+    }
+    
+    /* Footer */
+    .footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    }
+    
+    .footer p {
+    margin-bottom: 0.6rem;
+    }
+    
+    .social-links a {
+    color: #64748b;
+    margin: 0 0.4rem;
+    transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+    color: #60a5fa;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+    .hero {
+    padding-top: 3rem;
+    }
+    .services-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+    }
+    }
