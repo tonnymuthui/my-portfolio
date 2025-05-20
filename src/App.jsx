@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import './style.css';
 import profImage from "./assets/me3.PNG";
 import psyche from "./assets/Psychelogo1.jpg";
-import trip from "./assets/triplogo.png";
+import trip from "./assets/triplogo.PNG";
 import kozi from "./assets/kozi.png";
 import blank from "./assets/blank.png";
 
