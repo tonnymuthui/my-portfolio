@@ -3,7 +3,7 @@ import { FiDownload, FiCode, FiMonitor, FiBarChart2, FiMail, FiGithub, FiLinkedi
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
-import profImage from "./assets/me3.png";
+import profImage from "./assets/me3.PNG";
 import psyche from "./assets/Psychelogo1.jpg";
 import trip from "./assets/triplogo.png";
 import kozi from "./assets/kozi.png";
