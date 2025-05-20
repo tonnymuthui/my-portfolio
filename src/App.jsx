@@ -3,10 +3,11 @@ import { FiDownload, FiCode, FiMonitor, FiBarChart2, FiMail, FiGithub, FiLinkedi
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
-import profImage from "./assets/me.jpeg";
+import profImage from "./assets/me3.png";
 import psyche from "./assets/Psychelogo1.jpg";
 import trip from "./assets/triplogo.png";
 import kozi from "./assets/kozi.png";
+import blank from "./assets/blank.png";
 
 function App() {
   useEffect(() => {
@@ -28,21 +29,25 @@ function App() {
           <img src={profImage} alt="Profile" />
         </div>
         <h1>Hello, I'm <span className="highlight">Tonny Muthui</span></h1>
-        <p className="subtitle">Software Engineer</p>
-        <a href="" className="btn">
+        <p className="subtitle">I am Software Engineer</p>
+        <div>
+        <a href="" className="btn" style={{ marginRight: "1rem"}}>
           <FiDownload size={20} style={{ marginRight: 8 }} />
           Download CV
+        </a>  
+        <a href="https://www.linkedin.com/in/tonny-muthui-8754961a0" className='btn' aria-label="LinkedIn" style={{ marginLeft: "1rem"}}>    My LinkedIn<FiLinkedin size={24} /> 
         </a>
+        </div>
       </section>
 
       {/* About Me */}
       <section className="section about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
-          I am a passionate developer with a background in building elegant and modern web applications.
-          I enjoy solving real-world problems and continuously improving my skills. 
-          I have over 2+ years of real world experience in fast-paced developing environment. And a track record of performing and working well individually and as part of a cross-functionl team.
-          I am very interested in all things tech.
+          I am a recent BSc. Software Engineering graduate. <br/>
+          I enjoy solving real-world problems and continuously improving my skills. <br/>
+          I have about 2 years of real world experience in fast-paced developing environment. And a track record of performing and working well individually and as part of a cross-functional team. <br/>
+          I am very interested in the whole software engineering life cycle from idea inception to implementation to testing to iterating alternative solutions until finally I deliver a complete product, I find it extremely rewarding.
         </p>
       </section>
 
@@ -60,6 +65,7 @@ function App() {
         <span className="skill-tag">CSS</span>
         <span className="skill-tag">Node.js</span>
         <span className="skill-tag">Django</span>
+        <span className="skill-tag">PHP</span>
       </div>
     </div>
 
@@ -67,8 +73,11 @@ function App() {
     <div className="neumorphic skill-card" data-aos="zoom-in" data-aos-delay="200">
       <h3>Platforms</h3>
       <div className="skill-list">
-        <span className="skill-tag">Git</span>
+        <span className="skill-tag">Postman</span>
         <span className="skill-tag">GitHub</span>
+        <span className="skill-tag">PostgreSQL</span>
+        <span className="skill-tag">SQLite</span>
+        <span className="skill-tag">mySQL</span>
         <span className="skill-tag">Netlify</span>
         <span className="skill-tag">Vercel</span>
         <span className="skill-tag">Firebase</span>
@@ -79,10 +88,11 @@ function App() {
     <div className="neumorphic skill-card" data-aos="zoom-in" data-aos-delay="300">
       <h3>Principles</h3>
       <div className="skill-list">
+        <span className="skill-tag">RESTful API & Axios and Fetch</span>
         <span className="skill-tag">Data Structures</span>
         <span className="skill-tag">CI/CD</span>
         <span className="skill-tag">AI/ML</span>
-        <span className="skill-tag">System Design</span>
+        <span className="skill-tag">GraphQL</span>
       </div>
     </div>
 
@@ -122,23 +132,23 @@ function App() {
             <img src={trip} alt="Project Thumbnail" />
             <h3>Trip Logger | React & Django | </h3>
             <p>A web application that helps Long haul drivers log their time and activities.</p>
-            <a href="" className="project-link">View Live</a>
+            <a href="https://trip-planner-six-jade.vercel.app/" className="project-link">View Live</a>
           </div>
           <div className="project-card neumorphic" data-aos="zoom-in" data-aos-delay="200">
             <img src={psyche} alt="Project Thumbnail" />
             <h3>Psyche | React & Django & ML |</h3>
             <p>Mental Health App</p>
-            <a href="" className="project-link">View Live</a>
+            <a href="https://github.com/tonnymuthui/psyche-ai" className="project-link">View On Github <FiGithub size={18}/></a>
           </div>
           <div className="project-card neumorphic" data-aos="zoom-in" data-aos-delay="200">
-            <img src={psyche} alt="Project Thumbnail" />
-            <h3>ecommerce | React & NodeJS |</h3>
+            <img src={blank} alt="Project Thumbnail" />
+            <h3>Ecommerce web app | React & NodeJS |</h3>
             <p>E- commerce</p>
-            <a href="" className="project-link">View Live</a>
+            <a href="https://github.com/tonnymuthui/ecommerce" className="project-link">View on GitHub <FiGithub size={18}/></a>
           </div>
           <div className="project-card neumorphic" data-aos="zoom-in" data-aos-delay="200">
             <img src={kozi} alt="Project Thumbnail" />
-            <h3>Kozi Connect | React |</h3>
+            <h3>Kozi Connect | PHP |</h3>
             <p>Company Website</p>
             <a href="https://www.kozi.co.ke" className="project-link">View Live</a>
           </div>
